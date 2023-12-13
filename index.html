@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leche Agría La Vaquerita</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="logo.png">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="main-header">
+        <div class="logo-container">
+            <img src="logo.png" alt="Logo de Leche Agría La Vaquerita">
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#menu">Menú</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#ubicacion">Ubicación</a></li>
+            </ul>
+        </nav>
+        <div class="contact-info">
+            <div class="phone-number">
+                <i class="fas fa-phone"></i>
+                <span>(+505) 8896-6079</span>
+            </div>
+            <button class="order-btn-header">
+                <i class="fas fa-shopping-cart"></i> Hacer Pedido
+            </button>
+        </div>
+        <div class="mobile-menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#menu">Menú</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#ubicacion">Ubicación</a></li>
+        </ul>
+    </div>
+
+    <!-- Sección de Inicio -->
+    <section id="inicio">
+        <div class="container">
+            <h2>Bienvenido a Leche Agría La Vaquerita</h2>
+            <p>Sabemos que el desayuno es la comida más importante del día. En Leche Agría La Vaquerita, te ofrecemos
+                productos frescos y de la más alta calidad para empezar tu día con energía.</p>
+            <p>Nuestro secreto está en la leche agria, que le da un toque especial y casero a cada platillo. ¡Descubre
+                el sabor que amas, todos los días!</p>
+        </div>
+    </section>
+
+    <!-- Sección de Nosotros -->
+    <section id="nosotros">
+        <div class="container">
+            <h2>Nuestra Historia</h2>
+            <p><i class="fas fa-heart"></i> Leche Agría La Vaquerita nace con la pasión de ofrecer desayunos auténticos y deliciosos. Desde nuestros inicios, nos esforzamos por utilizar ingredientes frescos y locales para brindarte la mejor experiencia culinaria.</p>
+            <p><i class="fas fa-users"></i> Nuestro equipo está comprometido en proporcionar un servicio excepcional y crear momentos memorables para nuestros clientes.</p>
+        </div>
+    </section>
+    
+
+    <!-- Sección de Menú -->
+    <section id="menu">
+        <div class="container">
+            <h2>Nuestro Delicioso Menú</h2>
+
+            <!-- Desmenuzada de Res con Gallo Pinto -->
+            <div class="menu-item" data-name="Desmenuzada de Res con Gallo Pinto" data-price="8.99">
+                <img src="Desmenuzada de Res con Gallo Pinto.jpg" alt="Desmenuzada de Res con Gallo Pinto">
+                <div class="item-details">
+                    <h3>Desmenuzada de Res con Gallo Pinto</h3>
+                    <p>Deliciosa desmenuzada de res acompañada de gallo pinto.</p>
+                    <p class="price">$8.99</p>
+                    <button class="order-btn" onclick="addToCart(this)">Agregar al Carrito</button>
+                </div>
+            </div>
+
+            <!-- Cerdo Frito con Gallo Pinto -->
+            <div class="menu-item" data-name="Cerdo Frito con Gallo Pinto" data-price="9.99">
+                <img src="Cerdo Frito con Gallo Pinto.jpg" alt="Cerdo Frito con Gallo Pinto">
+                <div class="item-details">
+                    <h3>Cerdo Frito con Gallo Pinto</h3>
+                    <p>Jugoso cerdo frito acompañado de gallo pinto.</p>
+                    <p class="price">$9.99</p>
+                    <button class="order-btn" onclick="addToCart(this)">Agregar al Carrito</button>
+                </div>
+            </div>
+
+            <!-- Leche Agria con Gallo Pinto -->
+            <div class="menu-item" data-name="Leche Agria con Gallo Pinto" data-price="7.99">
+                <img src="Leche Agria con Gallo Pinto.jpg" alt="Leche Agria con Gallo Pinto">
+                <div class="item-details">
+                    <h3>Leche Agria con Gallo Pinto</h3>
+                    <p>Tradicionales gallo pinto con nuestra deliciosa leche agria.</p>
+                    <p class="price">$7.99</p>
+                    <button class="order-btn" onclick="addToCart(this)">Agregar al Carrito</button>
+                </div>
+            </div>
+
+            <!-- Tortillas -->
+            <div class="menu-item" data-name="Tortillas" data-price="4.99">
+                <img src="Tortillas.jpg" alt="Tortillas">
+                <div class="item-details">
+                    <h3>Tortillas</h3>
+                    <p>Dos tortillas recién hechas.</p>
+                    <p class="price">$4.99</p>
+                    <button class="order-btn" onclick="addToCart(this)">Agregar al Carrito</button>
+                </div>
+            </div>
+
+            <!-- Gallo Pinto con 2 Huevos Enteros -->
+            <div class="menu-item" data-name="Gallo Pinto con 2 Huevos Enteros" data-price="10.99">
+                <img src="Gallo Pinto con 2 Huevos Enteros.jpg" alt="Gallo Pinto con 2 Huevos Enteros">
+                <div class="item-details">
+                    <h3>Gallo Pinto con 2 Huevos Enteros</h3>
+                    <p>Nuestro famoso gallo pinto acompañado de dos huevos enteros.</p>
+                    <p class="price">$10.99</p>
+                    <button class="order-btn" onclick="addToCart(this)">Agregar al Carrito</button>
+                </div>
+            </div>
+
+            <!-- Gallo Pinto con Chorizo Criollo -->
+            <div class="menu-item" data-name="Gallo Pinto con Chorizo Criollo" data-price="9.99">
+                <img src="Gallo Pinto con Chorizo Criollo.jpg" alt="Gallo Pinto con Chorizo Criollo">
+                <div class="item-details">
+                    <h3>Gallo Pinto con Chorizo Criollo</h3>
+                    <p>Exquisito gallo pinto acompañado de chorizo criollo.</p>
+                    <p class="price">$9.99</p>
+                    <button class="order-btn" onclick="addToCart(this)">Agregar al Carrito</button>
+                </div>
+            </div>
+
+            <!-- Pancakes con Mantequilla y Miel -->
+            <div class="menu-item" data-name="Pancakes con Mantequilla y Miel" data-price="7.99">
+                <img src="Pancakes con Mantequilla y Miel.jpg" alt="Pancakes con Mantequilla y Miel">
+                <div class="item-details">
+                    <h3>Pancakes con Mantequilla y Miel</h3>
+                    <p>Deliciosos pancakes servidos con mantequilla y miel.</p>
+                    <p class="price">$7.99</p>
+                    <button class="order-btn" onclick="addToCart(this)">Agregar al Carrito</button>
+                </div>
+            </div>
+
+            <!-- Omelette -->
+            <div class="menu-item" data-name="Omelette" data-price="8.99">
+                <img src="Omelette.jpg" alt="Omelette">
+                <div class="item-details">
+                    <h3>Omelette</h3>
+                    <p>Omelette preparado con los ingredientes de tu elección.</p>
+                    <p class="price">$8.99</p>
+                    <button class="order-btn" onclick="addToCart(this)">Agregar al Carrito</button>
+                </div>
+            </div>
+
+            <!-- Quesillo de Trenza -->
+            <div class="menu-item" data-name="Quesillo de Trenza" data-price="6.99">
+                <img src="Quesillo de Trenza.jpg" alt="Quesillo de Trenza">
+                <div class="item-details">
+                    <h3>Quesillo de Trenza</h3>
+                    <p>Delicioso quesillo de trenza hecho a mano.</p>
+                    <p class="price">$6.99</p>
+                    <button class="order-btn" onclick="addToCart(this)">Agregar al Carrito</button>
+                </div>
+            </div>
+
+            <!-- Nacatamal -->
+            <div class="menu-item" data-name="Nacatamal" data-price="12.99">
+                <img src="Nacatamal.jpg" alt="Nacatamal">
+                <div class="item-details">
+                    <h3>Nacatamal</h3>
+                    <p>Tradicional nacatamal nicaragüense.</p>
+                    <p class="price">$12.99</p>
+                    <button class="order-btn" onclick="addToCart(this)">Agregar al Carrito</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div id="cart">
+        <h2>Carrito de Compras</h2>
+        <ul id="cart-items"></ul>
+        <p>Total: $<span id="cart-total">0.00</span></p>
+        <button onclick="sendOrder()">Realizar Pedido</button>
+    </div>
+
+
+    <!-- Sección de Testimonios y Comentarios -->
+<section id="testimonials">
+    <div class="container">
+        <h2>Testimonios y Comentarios</h2>
+
+        <!-- Testimonio 1 -->
+        <div class="testimonial">
+            <p><strong>Leticia Reyes</strong> recomienda Leche Agría La Vaquerita:</p>
+            <p>Muy buenas las porciones, muy amable y rápida la atención. Encantada con las tortillas calientitas, satisfecha con la calidad y precio.</p>
+        </div>
+
+        <!-- Testimonio 2 -->
+        <div class="testimonial">
+            <p><strong>Olga Betancourt</strong> recomienda Leche Agría La Vaquerita:</p>
+            <p>La atención es buena y la comida está bien.</p>
+        </div>
+
+        <!-- Testimonio 3 -->
+        <div class="testimonial">
+            <p><strong>Abdon Espinoza</strong> recomienda Leche Agría La Vaquerita:</p>
+            <p>Muy buen servicio y precios justos.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Sección de Horarios -->
+<!-- Sección de Horarios -->
+<section id="hours">
+    <div class="container">
+        <h2>Horarios</h2>
+
+        <!-- Horarios Detallados -->
+        <table>
+            <tr>
+                <td><i class="far fa-calendar-alt"></i>Lunes</td>
+                <td>5:20 AM - 12:00 PM</td>
+            </tr>
+            <tr>
+                <td><i class="far fa-calendar-alt"></i>Martes</td>
+                <td>5:20 AM - 12:00 PM</td>
+            </tr>
+            <tr>
+                <td><i class="far fa-calendar-alt"></i>Miércoles</td>
+                <td>5:45 AM - 12:30 PM</td>
+            </tr>
+            <tr>
+                <td><i class="far fa-calendar-alt"></i>Jueves</td>
+                <td>5:20 AM - 12:30 PM</td>
+            </tr>
+            <tr>
+                <td><i class="far fa-calendar-alt"></i>Viernes</td>
+                <td>5:25 AM - 12:30 PM</td>
+            </tr>
+            <tr>
+                <td><i class="far fa-calendar-alt"></i>Sábado</td>
+                <td>5:45 AM - 12:30 PM</td>
+            </tr>
+            <tr>
+                <td><i class="far fa-calendar-alt"></i>Domingo</td>
+                <td>5:45 AM - 12:00 PM</td>
+            </tr>
+            <tr>
+                <td><i class="fas fa-calendar-times"></i>Festivos</td>
+                <td>Cerrado</td>
+            </tr>
+        </table>
+    </div>
+</section>
+
+    
+<!-- Sección de Ubicación -->
+<section id="ubicacion">
+    <div class="container">
+        <h2><i class="fas fa-map-marker-alt"></i> ¡Encuéntranos!</h2>
+        <p>Estamos ubicados en la siguiente dirección:</p>
+        <p><i class="fas fa-map-marker-alt"></i> Carretera a Masaya, Nicaragua</p>
+        <p><i class="fas fa-building"></i> Frente donde fue el Edificio Movistar, Managua</p>
+        <p>¡Esperamos tu visita!</p>
+    </div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.0657070993525!2d-86.25244622671323!3d12.107654333234052!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f73ffa4f3d7ae0f%3A0xdcfa65ada88cec94!2sLeche%20Agr%C3%ADa%20La%20Vaquera!5e0!3m2!1sen!2sni!4v1702473757050!5m2!1sen!2sni"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+
+
+        <!-- Sección de Contacto -->
+<!-- Sección de Contacto -->
+<section id="contacto">
+    <div class="container">
+        <h2><i class="fas fa-envelope"></i> Contacto</h2>
+        <p>Estamos ubicados en la Carretera a Masaya, Nicaragua, frente donde fue el Edificio Movistar, Managua. ¡Visítanos y disfruta de un desayuno delicioso!</p>
+        <p>Horario de Atención: Domingo a Domingo, de 5:30 am a 1:00 pm.</p>
+        
+        <!-- Iconos de Ubicación, Teléfono y Correo -->
+        <div class="contact-info">
+            <div>
+                <i class="fas fa-map-marker-alt"></i>
+                <p>Carretera a Masaya, frente al Edificio Movistar, Managua</p>
+            </div>
+            <div>
+                <i class="fas fa-phone"></i>
+                <p>+505 8896-6079</p>
+            </div>
+            <div>
+                <i class="far fa-envelope"></i>
+                <p><a href="mailto:info@lavaquerita.com">info@lavaquerita.com</a></p>
+            </div>
+        </div>
+        
+        <!-- Formulario de Contacto -->
+        <form action="#" method="post" class="contact-form">
+            <label for="nombre"><i class="fas fa-user"></i> Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            
+            <label for="email"><i class="fas fa-at"></i> Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="mensaje"><i class="fas fa-comment"></i> Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+            
+            <button type="submit"><i class="fas fa-paper-plane"></i> Enviar Mensaje</button>
+        </form>
+    </div>
+</section>
+
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <section id="pagos" class="payments">
+            <div class="container">
+                <h2>Aceptamos pagos con</h2>
+                <div class="payment-icons">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-paypal"></i>
+                    <i class="fas fa-university"></i>
+                </div>
+            </div>
+        </section>
+        <div class="container">
+            <div class="footer-links">
+                <div class="footer-section">
+                    <h3>Enlaces</h3>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#menu">Menú</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                        <li><a href="#nosotros">Nosotros</a></li>
+                        <li><a href="#ubicacion">Ubicación</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Información</h3>
+                    <ul>
+                        <li><a href="#">Aviso de privacidad</a></li>
+                        <li><a href="#">Términos y condiciones</a></li>
+                        <li><a href="#">Preguntas frecuentes</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contacto</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Dirección, Ciudad</li>
+                        <li><i class="fas fa-phone"></i> (+505) 8896-6079</li>
+                        <li><i class="far fa-envelope"></i> <a
+                                href="mailto:info@lecheagrialavaquerita.com">info@lecheagrialavaquerita.com</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Síguenos</h3>
+                    <div class="social-media">
+                        <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-container">
+            <p>&copy; 2023 Leche Agría La Vaquerita. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Script para la funcionalidad del menú de hamburguesa -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
